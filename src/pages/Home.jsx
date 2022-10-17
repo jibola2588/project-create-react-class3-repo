@@ -1,12 +1,29 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 
-export const Home = () => {
+const Home = () => {
+   const [post,setPost] =  useState(null)
+    useEffect(() => { 
+        getData(); 
+        return () =>{ 
+            getData();   
+        }
+    },[post])
+
+   const getData = () => { 
+       fetch(url)
+       .then(res => console.log(res))
+   }
+
   return (
     <div>
-     <h1>welcome to the Home page</h1>
-     <p>proceed to registration of profile</p>
+      Home page
+      <button
+      onClick = {() => getData()}
+      > 
+          getPost
+      </button>
     </div>
   );
 }
 
-
+export default Home;
