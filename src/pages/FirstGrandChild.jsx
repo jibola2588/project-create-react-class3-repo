@@ -1,13 +1,15 @@
 import React,{useContext} from 'react';
 import { userContext} from './Parent'
+import FirstGreatGrandChild from './FirstGreatGrandChild'
 
 const FirstGrandChild = () => {
-     const noticeContext =  useContext(userContext)
-     const {name,age,gender,isFav} = noticeContext
+    //  const noticeContext =  useContext(userContext)
+    //  const {name,age,gender,isFav} = noticeContext
   return (
     <div>
       <h6 className="text-orange-500 text-base font-normal">first grand child</h6>
-      <a
+      <FirstGreatGrandChild />
+      {/* <a
   className="group grid grid-cols-1 overflow-hidden rounded-lg border border-gray-100 sm:grid-cols-3"
   href="#"
 >
@@ -46,7 +48,7 @@ const FirstGrandChild = () => {
       fav:{isFav}
     </p>
   </div>
-</a>
+</a> */}
 
     </div>
   );
