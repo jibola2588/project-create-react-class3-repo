@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useReducer} from 'react';
 import {Routes,Route,Link} from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
@@ -8,10 +8,12 @@ import Parent from './pages/Parent';
 
 
 const App = () => {
+ 
   return (
     <div>
+      
       <Parent />
-  
+       <Home />
       {/* <nav className='flex bg-indigo-400 text-white py-4 px-4 gap-4 cursor-pointer'>
           <Link to='/'>
                 Home
