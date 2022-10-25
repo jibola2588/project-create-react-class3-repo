@@ -4,16 +4,16 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Parent from './pages/Parent';
-
+import Count from './components/Count'
 
 
 const App = () => {
  
   return (
-    <div>
-      
-      <Parent />
-       <Home />
+    <div className = 'text-center'>
+      <Count  />
+      {/* <Parent />
+       <Home /> */}
       {/* <nav className='flex bg-indigo-400 text-white py-4 px-4 gap-4 cursor-pointer'>
           <Link to='/'>
                 Home
