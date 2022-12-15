@@ -10,9 +10,9 @@ import Parent from './pages/Parent';
 const App = () => {
   return (
     <div>
-      <Parent />
+      {/* <Parent /> */}
   
-      {/* <nav className='flex bg-indigo-400 text-white py-4 px-4 gap-4 cursor-pointer'>
+      <nav className='flex bg-indigo-400 text-white py-4 px-4 gap-4 cursor-pointer'>
           <Link to='/'>
                 Home
           </Link>
@@ -29,7 +29,7 @@ const App = () => {
          <Route path = '/' element= {<Home />} />
          <Route path = '/about' element= {<About />} />
          <Route path = '/contact' element= {<Contact />} />
-      </Routes> */}
+      </Routes>
     </div>
   );
 }
